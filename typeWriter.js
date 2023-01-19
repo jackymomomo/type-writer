@@ -2,10 +2,10 @@ const sentence = "hello there from lighthouse labs";
 
 
 const logEachLetterOneByOne = string => {
-  for (let char of string){
+  for (let i = 0; i < string.length; i++){
     setTimeout(() => {
-      console.log(char)
-    }, char * 100);
+      process.stdout.write(string[i])
+    }, i * 100);
   }
 }
 
